@@ -25,9 +25,9 @@ global.location = "Africa, Egypt, Cairo" //ur location
 global.ownernomer = "201016892396" //ur number
 global.premium = ['201016892396'] //ur premium number
 global.botname = '『🐉┇𝙼𝙴𝙳𝙾 𝙱𝙾𝚃』' //ur bot name
-global.linkz = "https://youtube.com/@ABDALLAH_MOHAMED" //your theme url which will be displayed on whatsapp
-global.websitex = "https://telegra.ph/file/ec763cc3e7c88d0e67682.jpg" //ur website to be displayed
-global.botscript = 'https://youtube.com/@ABDALLAH_MOHAMED' //script link
+global.linkz = "https://youtube.com/@ABDALLAH_MOMED" //your theme url which will be displayed on whatsapp
+global.websitex = "https://i.imgur.com/hWioz5C.jpeg" //ur website to be displayed
+global.botscript = 'https://youtube.com/@ABDAH_MOHAMED' //script link
 global.themeemoji = "🐉" //ur theme emoji
 global.packname = "🔱...𝑴𝑬𝑫𝑶..🐉" //ur sticker watermark packname
 global.author = "『🐉┇𝙼𝙴𝙳𝙾 𝙱𝙾𝚃』" //ur sticker watermark author
@@ -35,7 +35,7 @@ global.wm = "🔱...𝑴𝑬𝑫𝑶..🐉." //ur watermark
 
 // Other
 global.sessionName = 'session'
-global.prefa = ['','!','.','#','&']
+global.prefa = [','!','.','#','&']
 global.sp = ''
 
 //messages
