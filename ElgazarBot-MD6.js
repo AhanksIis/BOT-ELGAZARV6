@@ -1107,7 +1107,7 @@ break
             await ElgazarBot.sendButtonText(m.chat, buttons, sloth, botname, m)
             }
             break
-            case 'soulmate': case 'رفيق': {
+            case 'soulmate': case 'سولميت': {
             if (!m.isGroup) throw mess.group
             let member = participants.map(u => u.id)
             let me = m.sender
@@ -1139,7 +1139,7 @@ break
             }
             break
             
-            case 'couple': case 'زواج': case 'جواز': {
+            case 'تينؤزيزؤزيزي': case 'وينرويوؤويو': case 'خصورويمرنزصوؤ': {
             if (!m.isGroup) throw mess.group
             let member = participants.map(u => u.id)
             let orang = member[Math.floor(Math.random() * member.length)]
@@ -1154,7 +1154,7 @@ break
             }
             break
             
-            case 'طلاق': {
+            case 'زؤؤمزيزيكثظرز': {
             if (!m.isGroup) throw mess.group
             let member = participants.map(u => u.id)
             let orang = member[Math.floor(Math.random() * member.length)]
@@ -1169,7 +1169,7 @@ break
             }
             break
             
-            case 'جوزني': case 'زوجني': {
+            case 'jdjnxsknxns': case 'jshsbsndn': {
             if (!m.isGroup) throw mess.group
             let member = participants.map(u => u.id)
             let me = m.sender
@@ -1184,7 +1184,7 @@ break
             }
             break
             
-            case 'طلقني': {
+            case 'hshdbsbbdhd': {
             if (!m.isGroup) throw mess.group
             let member = participants.map(u => u.id)
             let me = m.sender
@@ -1249,7 +1249,7 @@ break
 		await ElgazarBot.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
 	}
 	break*/
-	case 'add': case 'اضافه': case 'ضيف': {
+	case'jjsjsndj': case 'nsnxnsnxnsmksn': case 'zknsnsms': {
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
@@ -1322,11 +1322,11 @@ break
                 m.reply(mess.success)
                 }
                 break
-            case 'tagall': case 'منشن': case 'ازعاج': {
+            case 'tagall': case 'منشن': case 'تينيويوروبوو': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
-let teks = `══✪〘˙·٠${themeemoji}● منشن للكل ●${themeemoji}٠·˙〙✪══
+let teks = `══✪〘˙·٠${themeemoji}● منشن جماعي ●${themeemoji}٠·˙〙✪══
  
  🌿 *الرساله : ${q ? q : 'مفيش رساله'}*\n\n`
                 for (let mem of participants) {
@@ -1335,14 +1335,14 @@ let teks = `══✪〘˙·٠${themeemoji}● منشن للكل ●${themeemoji
                 ElgazarBot.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
                 break
-                case 'hidetag': case 'وهمي': case 'مخفي': {
+                case 'htg': case 'وهمي': case 'مخفي': {
             if (!m.isGroup) throw mess.group
             if (!isBotAdmins) throw mess.botAdmin
             if (!isAdmins) throw mess.admin
             ElgazarBot.sendMessage(m.chat, { text : q ? q : '' , mentions: participants.map(a => a.id)}, { quoted: m })
             }
             break
-	    case 'style': case 'زغرفه': {
+	    case 'style': case 'زخرفة': {
 	        if (!isPremium && global.db.data.users[m.sender].limit < 1) return m.reply(mess.endLimit) // response when limit runs out
 		db.data.users[m.sender].limit -= 1 // -1 limit
 		let { styletext } = require('./lib/scraper')
@@ -1600,7 +1600,7 @@ teks += ` ┗━${global.themeemoji} *Time :* ${moment(waktu * 1000).format('DD/
 ElgazarBot.sendTextWithMentions(m.chat, teks, m)
 }
 break
-            case 'الرابط': case 'لينك': case 'gclink': case 'grouplink': {
+            case 'نيزبمزثزرزبزز': case 'نبنرزبزرزثزبز': case 'تؤورزيزرززي': case 'grouksnndpwplink': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 let response = await ElgazarBot.groupInviteCode(m.chat)
@@ -1725,7 +1725,7 @@ case 'sticker': case 's': case 'ملصق': case 'ستيكر': {
             m.reply(eb)
         }
         break
-            case 'dbinary': {
+            case 'dbinarysbbs': {
             if (!text) throw `Example : ${prefix + command} text`
             let { dBinary } = require('./lib/binary')
             let db = await dBinary(text)
@@ -1735,7 +1735,7 @@ case 'sticker': case 's': case 'ملصق': case 'ستيكر': {
 case 'buypreim':
 m.reply(`Chat owner bro, please type .owner`)
 break
-  case 'لللللللل':
+  case 'للbxbxbxbلللللل':
 if (!isCreator) throw mess.owner
 if (!q) return m.reply(`Enter the sample number\n\nExample: \n${prefix}${command} 916909137213`)
 if(isNaN(q)) return await m.reply('must be a number')
@@ -1746,7 +1746,7 @@ fs.writeFileSync('./database/user/premium.json', JSON.stringify(premium))
 m.reply(`* PREMIUM ADDED *\n\n${themeemoji} *ID*: ${prmi}`)
 break
 case 'delprem':
- case 'لللللللللل':
+ case 'للللللhxhxhxhلللل':
 if (!isCreator) throw mess.owner
   if (!q) return m.reply(`Enter the Number\n\nExample: \n${prefix}${command} 916909137213`)
   if(isNaN(q)) return await m.reply('must be a number')
@@ -2005,7 +2005,7 @@ if (!text) return m.reply(`Example : ${prefix + command} Stay jb`)
 *┃🎲الوصف :* ${anulay.description}
 *┃🌿 الرابط :* ${anulay.url}
 
-┃اسم البوت : 📶 𝗕𝗢𝗧 𝗘𝗟𝗚𝗔𝗭𝗔𝗥 📶 
+┃اسم البوت : 『📶┇𝙼𝙴𝙳𝙾 𝙱𝙾𝚃』 
 
 ┗━━━━━━━━━❊`,
                     footer: botname,
@@ -3041,70 +3041,70 @@ ElgazarBot.sendMessage(m.chat, { audio: { url: data.audio }, mimetype: 'audio/mp
 })
 }
 break
-case 'tiktokgirl':
+case 'tiktokgirbbdl':
 m.reply(mess.wait)
 var but = [{buttonId: `${command}`, buttonText: { displayText: "NEXT➡️" }, type: 1 }]
 var asupan = JSON.parse(fs.readFileSync('./HostMedia/tiktokvids/tiktokgirl.json'))
 var hasil = pickRandom(asupan)
 ElgazarBot.sendMessage(m.chat, { caption: mess.success, video: { url: hasil.url }, buttons: but, footer: botname }, { quoted: m })
 break
-case 'tiktokghea':
+case 'tiktokghhsvea':
 m.reply(mess.wait)
 var but = [{buttonId: `${command}`, buttonText: { displayText: "NEXT➡️" }, type: 1 }]
 var gheayubi = JSON.parse(fs.readFileSync('./HostMedia/tiktokvids/gheayubi.json'))
 var hasil = pickRandom(gheayubi)
 ElgazarBot.sendMessage(m.chat, { caption: mess.success, video: { url: hasil.url }, buttons: but, footer: botname }, { quoted: m })
 break
-case 'xnxxbocil':
+case 'xnxxbocibsbl':
 m.reply(mess.wait)
 var but = [{buttonId: `${command}`, buttonText: { displayText: "التالي➡️" }, type: 1 }]
 var bocil = JSON.parse(fs.readFileSync('./HostMedia/tiktokvids/bocil.json'))
 var hasil = pickRandom(bocil)
 ElgazarBot.sendMessage(m.chat, { caption: mess.success, video: { url: hasil.url }, buttons: but, footer: botname }, { quoted: m })
 break
-case 'tiktoknukhty':
+case 'tiktoknukvsvhty':
 m.reply(mess.wait)
 var but = [{buttonId: `${command}`, buttonText: { displayText: "NEXT➡️" }, type: 1 }]
 var ukhty = JSON.parse(fs.readFileSync('./HostMedia/tiktokvids/ukhty.json'))
 var hasil = pickRandom(ukhty)
 ElgazarBot.sendMessage(m.chat, { caption: mess.success, video: { url: hasil.url }, buttons: but, footer: botname }, { quoted: m })
 break
-case 'tiktoksantuy':
+case 'tiktoksantbsnwnbuy':
 m.reply(mess.wait)
 var but = [{buttonId: `${command}`, buttonText: { displayText: "NEXT➡️" }, type: 1 }]
 var santuy = JSON.parse(fs.readFileSync('./HostMedia/tiktokvids/santuy.json'))
 var hasil = pickRandom(santuy)
 ElgazarBot.sendMessage(m.chat, { caption: mess.success, video: { url: hasil.url }, buttons: but, footer: botname }, { quoted: m })
 break
-case 'tiktokkayes':
+case 'tiktokkayesbs':
 m.reply(mess.wait)
 var but = [{buttonId: `${command}`, buttonText: { displayText: "NEXT➡️" }, type: 1 }]
 var kayes = JSON.parse(fs.readFileSync('./HostMedia/tiktokvids/kayes.json'))
 var hasil = pickRandom(kayes)
 ElgazarBot.sendMessage(m.chat, { caption: mess.success, video: { url: hasil.url }, buttons: but, footer: botname }, { quoted: m })
 break
-case 'tiktokpanrika':
+case 'tiktokpanrbsbika':
 m.reply(mess.wait)
 var but = [{buttonId: `${command}`, buttonText: { displayText: "NEXT➡️" }, type: 1 }]
 var rikagusriani = JSON.parse(fs.readFileSync('./HostMedia/tiktokvids/panrika.json'))
 var hasil = pickRandom(rikagusriani)
 ElgazarBot.sendMessage(m.chat, { caption: mess.success, video: { url: hasil.url }, buttons: but, footer: botname }, { quoted: m })
 break
-case 'tiktoknotnot':
+case 'tiktoknodddtnot':
 m.reply(mess.wait)
 var but = [{buttonId: `${command}`, buttonText: { displayText: "NEXT➡️" }, type: 1 }]
 var notnot = JSON.parse(fs.readFileSync('./HostMedia/tiktokvids/notnot.json'))
 var hasil = pickRandom(notnot)
 ElgazarBot.sendMessage(m.chat, { caption: mess.success, video: { url: hasil.url }, buttons: but, footer: botname }, { quoted: m })
 break
-case 'chinese':
+case 'chinedddse':
 m.reply(mess.wait)
 var but = [{buttonId: `${command}`, buttonText: { displayText: "NEXT➡️" }, type: 1 }]
 var notnot = JSON.parse(fs.readFileSync('./HostMedia/tiktokpics/china.json'))
 var hasil = pickRandom(notnot)
 ElgazarBot.sendMessage(m.chat, { caption: mess.success, image: { url: hasil.url }, buttons: but, footer: botname }, { quoted: m })
 break
-case 'hijab':
+case 'hijaddvsb':
 m.reply(mess.wait)
 var but = [{buttonId: `${command}`, buttonText: { displayText: "NEXT➡️" }, type: 1 }]
 var notnot = JSON.parse(fs.readFileSync('./HostMedia/tiktokpics/hijab.json'))
@@ -4701,7 +4701,7 @@ case 'dare': case 'تويت':
   "أجمل شي بحياتك وش هو؟ ",
 ]
               const xeondare = dare[Math.floor(Math.random() * dare.length)]
-              bufferdare = await getBuffer(`https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`)
+              bufferdare = await getBuffer(`https://telegra.ph/file/72eef9c84edb188dee373.jpg`)
               ElgazarBot.sendMessage(from, { image: bufferdare, caption: '*♚ مرحبا بك في قسم تويت*\nꔹ━━━━━ꔹ\n'+ xeondare }, {quoted:m})
               break
                             break
@@ -4805,7 +4805,7 @@ case 'dare': case 'تويت':
 "لو خيروك |  بين مشاركة المنزل مع عائلة من الفئران أو عائلة من الأشخاص المزعجين الفضوليين الذين يتدخلون في كل كبيرة وصغيرة؟ ",
 ]
               const xeontruth = truth[Math.floor(Math.random() * truth.length)]
-              buffertruth = await getBuffer(`https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`)
+              buffertruth = await getBuffer(`https://telegra.ph/file/72eef9c84edb188dee373.jpg`)
               ElgazarBot.sendMessage(from, { image: buffertruth, caption: '*♚ مرحبا بك في لعبة لو خيروك*\nꔹ━━━━━ꔹ\n'+ xeontruth }, {quoted:m})
               break  
               
@@ -4854,7 +4854,7 @@ case 'dare': case 'تويت':
 "‏مامن لسان يستغفر إلا فتحت له الدنيا بما فيها أستغفرك ربي وأتوب إليك "
 ]
               const xeontruth1 = truth1[Math.floor(Math.random() * truth1.length)]
-              buffertruth1 = await getBuffer(`https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`)
+              buffertruth1 = await getBuffer(`https://telegra.ph/file/72eef9c84edb188dee373.jpg`)
               ElgazarBot.sendMessage(from, { image: buffertruth1, caption: '*♚ مرحبا بك في قسم الاذكار*\nꔹ━━━━━ꔹ\n'+ xeontruth1 }, {quoted:m})
               break
        
@@ -4967,16 +4967,16 @@ case 'dare': case 'تويت':
 "أنِر ظُلمتي، وامحُ خطيئتي، واقبل توبتي وأعتِق رقبتي يا اللّٰه. إنكَ عفوٌّ تُحِبُّ العفوَ؛ فاعفُ عني 💛 ",
 ]
               const xeonhfuduf = hfuduf[Math.floor(Math.random() * hfuduf.length)]
-              bufferhfuduf = await getBuffer(`https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`)
+              bufferhfuduf = await getBuffer(`https://telegra.ph/file/72eef9c84edb188dee373.jpg`)
               ElgazarBot.sendMessage(from, { image: bufferhfuduf, caption: '*♚ مرحبا بك في البوستات*\nꔹ━━━━━ꔹ\n'+ xeonhfuduf }, {quoted:m})
               break
        
-       case 'gmscat': case 'كت':
+       case 'تؤنؤزؤزرزي': case 'تؤتؤزيزؤزيوو':
               const gmscat =[
     "『فيجيتا』","『غوكو』","『شيسوي』","『ايتاشي』","『ناروتو』","『كيلوا』","『لوفي زورو سانجي』","『زاراكي ايزن توسين』","『ناروتو ساسكي كاكاشي』","『مادارا اوبيتو』","『هاشيراما توبيراما』","『انزاي دازاي』","『هاغومورو』","『سوكونا يوجي』","『كاكاشي هاتاكي』","『فوغاكو اوتشيها』","『ناروتو اوزوماكي』","『غارب لوفي ايس ساب』و","『اكاينو اوكيجي كيزارو』","『غون كيلوا』","『اوميني』","『سيلفا زينو نيترو』","『استا يامي』","『كيسكي يوروتشي ايتشيغو』","『ساروتوبي دانزو』","『فوجيتورا』","『نامي روبين』","『هيماواري هينات』","『ستارك جريمجو نيل』","『الوكا』","『شينو كيبا』","『روك لي مايت غاي』","『ايتاشي ساسكي』","『كونان ناغاتو ياهيكو』","『جيرايا تسونادي』","『ساي اينو』","『شينرا』","『ثوركيل ثورفين ثورز』","『اشيلاد』","『لاو ميهوك زورو』","『تيتش ادوارد』","『ناكا اوتشيها』","『هيروزين ساروتوبي』","『مونكي دي لوفي』","『كارين』","『موريا』","『اشورا هامورا』","『انيوشا كاجومي』","『ديدارا ساسوري』","『روجر رايلي』","『تانجيرو نيزيكو』","『زينيتسو اينوسكي』","『زيك ايرين』","『ميكاسا اني』","『ليفاي اكيرمان』","『ايروين مايكي』","『مايكي دراكن』","『هيسوكا』","『ارمين』","『هاتسوني ميكو』","『كورو』","『اوراهارا كيسكي』","『شينوبو كاناو』","『كيسامي اكاشي』","『كوزان』",
 ]
               const xeongmscat = gmscat[Math.floor(Math.random() * gmscat.length)]
-              buffergmscat = await getBuffer(`https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`)
+              buffergmscat = await getBuffer(`https://telegra.ph/file/72eef9c84edb188dee373.jpg`)
               ElgazarBot.sendMessage(from, { image: buffergmscat, caption: '*♚ مرحبا بك في كت*\nꔹ━━━━━ꔹ\n'+ xeongmscat }, {quoted:m})
               break
        
@@ -5044,7 +5044,7 @@ case 'dare': case 'تويت':
 " كنت نصحت نفسي ياخويا😹",
 ]
               const xeonisjshsd = isjshsd[Math.floor(Math.random() * isjshsd.length)]
-              bufferisjshsd = await getBuffer(`https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`)
+              bufferisjshsd = await getBuffer(`https://telegra.ph/file/72eef9c84edb188dee373.jpg`)
               ElgazarBot.sendMessage(from, { image: bufferisjshsd, caption: '*♚ اتفضل النصيحه اعمل بيها*\nꔹ━━━━━ꔹ\n'+ xeonisjshsd }, {quoted:m})
               break
        
@@ -5102,7 +5102,7 @@ case 'dare': case 'تويت':
 "دولة واسم بحرف ⤌ ب  ",
 ]
               const xeonidhsisgd = idhsisgd[Math.floor(Math.random() * idhsisgd.length)]
-              bufferidhsisgd = await getBuffer(`https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`)
+              bufferidhsisgd = await getBuffer(`https://telegra.ph/file/72eef9c84edb188dee373.jpg`)
               ElgazarBot.sendMessage(from, { image: bufferidhsisgd, caption: '*♚ مرحبا بك في لعبة الحروف*\nꔹ━━━━━ꔹ\n'+ xeonidhsisgd }, {quoted:m})
               break
        
@@ -5351,7 +5351,7 @@ case 'dare': case 'تويت':
 "سورتان في القرآن الكريم معروفتين باسم الزهراوان، فما هما؟ ",
 ]
               const xeonjtudvu = jtudvu[Math.floor(Math.random() * jtudvu.length)]
-              bufferjtudvu = await getBuffer(`https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`)
+              bufferjtudvu = await getBuffer(`https://telegra.ph/file/72eef9c84edb188dee373.jpg`)
               ElgazarBot.sendMessage(from, { image: bufferjtudvu, caption: '*♚ اتفضل سوال يلا جاوب*\nꔹ━━━━━ꔹ\n'+ xeonjtudvu }, {quoted:m})
               break
        
@@ -6693,7 +6693,7 @@ m.reply(mess.wait)
                     return('Error!')
                 })
 break
-case 'كاكا':  
+case 'كالوينؤيو':  
 m.reply(mess.wait)						
                     ud = await axios.get('https://waifu.pics/api/sfw/shinobu')
 var wbutsss = [
@@ -6710,7 +6710,7 @@ await ElgazarBot.sendMessage(m.chat,buttonsesMessage, { quoted:m }).catch(err =>
      return('Error!')
     })               
 break
-case 'جراي':
+case 'جريتتيويواي':
 m.reply(mess.wait)						
                     ud = await axios.get('https://waifu.pics/api/sfw/megumin')
 var wbutsss = [
@@ -6727,7 +6727,7 @@ await ElgazarBot.sendMessage(m.chat,buttonzMessage, { quoted:m }).catch(err => {
      return('Error!')
     })               
 break     
-case 'مينيتوكيو':
+case 'مينيتتيويويوكيو':
 m.reply(mess.wait)						
  waifudd = await axios.get(`https://waifu.pics/api/sfw/awoo`)
  var wbuttsss = [
@@ -6744,7 +6744,7 @@ m.reply(mess.wait)
                     return('Error!')
                 })
 break
-case 'لولي':
+case 'لوليىبىىةل':
 if (!m.isGroup) return m.reply(mess.group)
 m.reply(mess.wait)
 var but = [{buttonId: `${command}`, buttonText: { displayText: "التالي➡️" }, type: 1 }]
@@ -6752,7 +6752,7 @@ var ahegaonsfw = JSON.parse(fs.readFileSync('./HostMedia/anime/loli.json'))
 var xeonyresult = pickRandom(ahegaonsfw)
 ElgazarBot.sendMessage(m.chat, { caption: mess.success, image: { url: xeonyresult.url }, buttons: but, footer: botname }, { quoted: m })
 break
-case 'تانجيرو':
+case 'تانبةيةبرريجيرو':
 if (!m.isGroup) return m.reply(mess.group)
 m.reply(mess.wait)
 var but = [{buttonId: `${command}`, buttonText: { displayText: "التالي➡️" }, type: 1 }]
@@ -6776,7 +6776,7 @@ var ahegaonsfw = JSON.parse(fs.readFileSync('./HostMedia/anime/random.json'))
 var xeonyresult = pickRandom(ahegaonsfw)
 ElgazarBot.sendMessage(m.chat, { caption: mess.success, image: { url: xeonyresult.url }, buttons: but, footer: botname }, { quoted: m })
 break
-case 'ريكا':
+case 'ريكببلىىفقببةا':
 if (!m.isGroup) return m.reply(mess.group)
 m.reply(mess.wait)
 var but = [{buttonId: `${command}`, buttonText: { displayText: "التالي➡️" }, type: 1 }]
@@ -6946,7 +6946,7 @@ case 'الغباء': {
             }
             break
 case 'بوت': {
-            	let lowq = `*انا متصل يعم متصدعناش🤺:*\n*${runtime(process.uptime())}*`
+            	let lowq = `انا متصل يسطا متخفش 🗿🤺:*\n*${runtime(process.uptime())}*`
                 let buttons = [{ buttonId: 'menu', buttonText: { displayText: 'الاوامر' }, type: 1 }]
                 await ElgazarBot.sendButtonText(m.chat, buttons, lowq, botname, m, {quoted: fkontak})
             	}
@@ -6966,11 +6966,11 @@ ElgazarBot.sendMessage(from, { text: `*${command}*\n\nالاسم : ${q}\nالا�
 					break
 					case 'شخصيتك':
 					if (!text) return m.reply(`منشن علي شخص, مثال : ${prefix + command} @abdallah`)
-					const xeony =['زفت','واطي','غبي','مطيع','غلبان','جدع','طيب','حبوب','جميل','حمار','محترم','شرموط','كلب','ورع']
+					const xeony =['زفت','واطي','غبي','مطيع','غلبان','جدع','طيب','حبوب','جميل','حمار','محترم','مؤدب','كلب','ورع']
 					const taky = xeony[Math.floor(Math.random() * xeony.length)]
 					ElgazarBot.sendMessage(from, { text: `التحقق من الشخصيه : ${q}\nالاجابه : *${taky}*` }, { quoted: m })
 				     break
-                    case 'تتتتتتتتت':
+                    case 'تتتتتتيييييباةتتت':
   case 'greatcheck':
     case 'gaycheck':
       case 'cutecheck':
@@ -6993,7 +6993,7 @@ ElgazarBot.sendMessage(from, { text: `*${command}*\n\nالاسم : ${q}\nالا�
       case 'حمار':
       case 'خروف':
       case 'ذكي':
-      case 'رقاص':
+      case 'اهبل':
       case 'زفت':
       case 'سافل':
       case 'شجاع':
@@ -7008,7 +7008,7 @@ ElgazarBot.sendMessage(from, { text: `*${command}*\n\nالاسم : ${q}\nالا�
       case 'كاذب':
       case 'كريه':
       case '>':
-      case 'ماباع':
+      case 'باعد':
       case 'مجنون':
       case 'محبوب':
       case 'محترم':
@@ -7024,15 +7024,15 @@ ElgazarBot.sendMessage(from, { text: `*${command}*\n\nالاسم : ${q}\nالا�
       case 'نجس':
       case 'وصخ':
       case 'ورع':
-      case 'شاذ':
+      case 'هطف':
       case 'علق':
-      case 'متناك':
-      case 'خول':
+      case 'غبي مره':
+      case 'نذل':
       case 'وسخ':
       case 'مكروف':
       case 'هطف':
       case 'اهبل':
-      case 'معرص':
+      case 'هادئ':
       case 'عبقري':
       case 'اهطل': {
             if (!m.isGroup) return m.reply(`${mess.group}`)
@@ -7174,67 +7174,67 @@ const reply = `
     break
 case 'السورس': case 'script': {
 teks = `⋆ تم تطوير وبرمجه هذا السورس •
-⋆ بواسطه عبدالله محمد •
+⋆ بواسطه ميدو-شانكس •
 ⋆ يمكنك التواصل مع المبرمج عبر التيلجرام ⤌⤈
- t.me/A_M_030
+ t.me/мєɒσ ࿐
 تبعني عبر اليوتيوب ⤌⤈
-https://youtube.com/@ABDALLAH_MOHAMED
-واشترك وفعل الجرس وانتظر شروحات للبرمجه..🌍🔥`
+مفيش
+تريد تضيف البوت جروب كلم المطور اول..🌍🔥`
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'المطور👤'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`},
+image: {url: `https://i.imgur.com/hWioz5C.jpeg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
-body: "سورس الجزار", 
+title:"『🐉┇𝙼𝙴𝙳𝙾 𝙱𝙾𝚃』",
+body: "سورس ميدو", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
-sourceUrl: "https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg"
+mediaUrl: 'https://i.imgur.com/hWioz5C.jpeg',
+sourceUrl: "https://i.imgur.com/hWioz5C.jpeg"
 }}
 }
 ElgazarBot.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
             break
             
-case 'التنصيب': case 'التسجيل': {
+case 'التنصيبتميمرظيظ': case 'نؤزيززيزيزر': {
 teks = `• مرحبا ياروحي ⤌⤈       
 𓆩 *${pushname}* 𓆪
 • انا بوت واتس اسمي ⤌⤈
 𓆩 *${global.botname}* 𓆪
 • تم تطويري وبرمجتي •
-• بواسطه عبدالله محمد •
+• بواسطه مي •
 • اذا كنت تريد صنع بوت مماثل لهذا •
 يجب عليك الانظمام لهذه القناه وسماع الشروحات لتنصيب بوت وتس مثل هذا البوت
  
 قناة برمجه الجزار للشروحات
-https://youtube.com/@ABDALLAH_MOHAMED
+https://youtube.com/@ABDAAH_MOHAMED
 
 لينك شاتي 
-https://api.whatsapp.com/send?phone=+201098906252`
+https://api.whatsapp.com/sendone=+2016252`
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'المطور👤'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`},
+image: {url: `https://i.imgur.com/hWioz5C.jpeg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
-body: "سورس الجزار", 
+title:"『🐉┇𝙼𝙴𝙳𝙾 𝙱𝙾𝚃』",
+body: "سورس ميدو", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
-sourceUrl: "https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg"
+mediaUrl: 'https://i.imgur.com/hWioz5C.jpeg',
+sourceUrl: "https://i.imgur.com/hWioz5C.jpeg"
 }}
 }
 ElgazarBot.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -8432,19 +8432,19 @@ let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'المطور👤'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`},
+image: {url: `https://i.imgur.com/hWioz5C.jpeg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
-body: "سورس الجزار", 
+title:"『🐉┇𝙼𝙴𝙳𝙾 𝙱𝙾𝚃』",
+body: "سورس ميدو", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
-sourceUrl: "https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg"
+mediaUrl: 'https://i.imgur.com/hWioz5C.jpeg',
+sourceUrl: "https://i.imgur.com/hWioz5C.jpeg"
 }}
 }
 ElgazarBot.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -8490,19 +8490,19 @@ let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'المطور👤'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`},
+image: {url: `https://i.imgur.com/hWioz5C.jpeg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
-body: "سورس الجزار", 
+title:"『🐉┇𝙼𝙴𝙳𝙾 𝙱𝙾𝚃』",
+body: "سورس ميدو", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
-sourceUrl: "https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg"
+mediaUrl: 'https://i.imgur.com/hWioz5C.jpeg',
+sourceUrl: "https://i.imgur.com/hWioz5C.jpeg"
 }}
 }
 ElgazarBot.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -8575,19 +8575,19 @@ let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'المطور👤'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`},
+image: {url: `https://i.imgur.com/hWioz5C.jpeg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
-body: "سورس الجزار", 
+title:"『🐉┇𝙼𝙴𝙳𝙾 𝙱𝙾𝚃』",
+body: "سورس ميدو", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
-sourceUrl: "https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg"
+mediaUrl: 'https://i.imgur.com/hWioz5C.jpeg',
+sourceUrl: "https://i.imgur.com/hWioz5C.jpeg"
 }}
 }
 ElgazarBot.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -8642,19 +8642,19 @@ let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'المطور👤'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`},
+image: {url: `https://i.imgur.com/hWioz5C.jpeg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
-body: "سورس الجزار", 
+title:"『🐉┇𝙼𝙴𝙳𝙾 𝙱𝙾𝚃』",
+body: "سورس ميدو", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
-sourceUrl: "https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg"
+mediaUrl: 'https://i.imgur.com/hWioz5C.jpeg',
+sourceUrl: "https://i.imgur.com/hWioz5C.jpeg"
 }}
 }
 ElgazarBot.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -8703,19 +8703,19 @@ let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'المطور👤'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`},
+image: {url: `https://i.imgur.com/hWioz5C.jpeg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
-body: "سورس الجزار", 
+title:"『🐉┇𝙼𝙴𝙳𝙾 𝙱𝙾𝚃』",
+body: "سورس ميدو", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
-sourceUrl: "https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg"
+mediaUrl: 'https://i.imgur.com/hWioz5C.jpeg',
+sourceUrl: "https://i.imgur.com/hWioz5C.jpeg"
 }}
 }
 ElgazarBot.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -8755,19 +8755,19 @@ let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'المطور👤'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`},
+image: {url: `https://i.imgur.com/hWioz5C.jpeg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
-body: "سورس الجزار", 
+title:"『🐉┇𝙼𝙴𝙳𝙾 𝙱𝙾𝚃』",
+body: "سورس ميدو", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
-sourceUrl: "https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg"
+mediaUrl: 'https://i.imgur.com/hWioz5C.jpeg',
+sourceUrl: "https://i.imgur.com/hWioz5C.jpeg"
 }}
 }
 ElgazarBot.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -8843,19 +8843,19 @@ let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'المطور👤'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`},
+image: {url: `https://i.imgur.com/hWioz5C.jpeg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
-body: "سورس الجزار", 
+title:"『🐉┇𝙼𝙴𝙳𝙾 𝙱𝙾𝚃』",
+body: "سورس ميدو", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
-sourceUrl: "https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg"
+mediaUrl: 'https://i.imgur.com/hWioz5C.jpeg',
+sourceUrl: "https://i.imgur.com/hWioz5C.jpeg"
 }}
 }
 ElgazarBot.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -8900,19 +8900,19 @@ let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'المطور👤'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`},
+image: {url: `https://i.imgur.com/hWioz5C.jpeg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
-body: "سورس الجزار", 
+title:"『🐉┇𝙼𝙴𝙳𝙾 𝙱𝙾𝚃』",
+body: "سورس ميدو", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
-sourceUrl: "https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg"
+mediaUrl: 'https://i.imgur.com/hWioz5C.jpeg',
+sourceUrl: "https://i.imgur.com/hWioz5C.jpeg"
 }}
 }
 ElgazarBot.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -9199,19 +9199,19 @@ let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'المطور👤'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`},
+image: {url: `https://i.imgur.com/hWioz5C.jpeg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
-body: "سورس الجزار", 
+title:"『🐉┇𝙼𝙴𝙳𝙾 𝙱𝙾𝚃』",
+body: "سورس ميدو", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
-sourceUrl: "https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg"
+mediaUrl: 'https://i.imgur.com/hWioz5C.jpeg',
+sourceUrl: "https://i.imgur.com/hWioz5C.jpeg"
 }}
 }
 ElgazarBot.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -9230,7 +9230,7 @@ teks = `•╗ مرحبا ياعزيزي ⤌⤈
 •╣ مميزات البوت كثيره جدا 
 •╝ ويعمل بجودة فائقه وعاليه
 𓍹————————————𓍻
-𓆩قائمة اوامر سورس الجزار𓆪 
+𓆩قائمة اوامر ميدو بوت𓆪 
 𓍹————————————𓍻
 ( .م1 ) ☞ اوامر الاعضاء
 ( .م2 ) ☞ اوامر المالك
@@ -9247,19 +9247,19 @@ let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'المطور👤'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`},
+image: {url: `https://i.imgur.com/hWioz5C.jpeg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
-body: "سورس الجزار", 
+title:"『🐉┇𝙼𝙴𝙳𝙾 𝙱𝙾𝚃』",
+body: "سورس ميدو", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
-sourceUrl: "https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg"
+mediaUrl: 'https://i.imgur.com/hWioz5C.jpeg',
+sourceUrl: "https://i.imgur.com/hWioz5C.jpeg"
 }}
 }
 ElgazarBot.sendMessage(m.chat, buttonMessage, { quoted: m })
